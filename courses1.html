@@ -119,7 +119,7 @@
                   <iframe
                     width="100%"
                     height="315"
-                    src="https://www.youtube.com/embed/IVdyt2pNxn8?si=Uk7OEppPjN-8n5c3"
+                    src="https://www.youtube.com/embed/5u-WtG67Piw?si=DzxncAEl1f6kJ7p3"
                     title="YouTube video player"
                     frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -139,8 +139,11 @@
                             <h3> العنوان </h3>
                             <p>نص تجريبي لوصف الدرس. يمكن تعديل هذا النص حسب الحاجة.</p>
                         </div>
-                        <div class="course-img" style="background-image: url(images/project-2.jpg);">
-                        </div>
+                       <div class="course-img">
+    <a href="images/project-22.jpg" class="image-popup">
+        <div style="background-image: url(images/project-22.jpg); height: 200px; background-size: cover; background-position: center;"></div>
+    </a>
+</div>
                     </div>
                 </div>
           </div>
@@ -223,5 +226,17 @@
     <script src="js/magnific-popup-options.js"></script>
     <script src="js/simplyCountdown.js"></script>
     <script src="js/main.js"></script>
+     <script>
+    $(document).ready(function() {
+        $('.image-popup').magnificPopup({
+            type: 'image',
+            closeOnContentClick: true,
+            mainClass: 'mfp-img-mobile',
+            image: {
+                verticalFit: true
+            }
+        });
+    });
+</script>
   </body>
 </html>
